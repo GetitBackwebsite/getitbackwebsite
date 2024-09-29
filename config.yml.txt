@@ -1,0 +1,15 @@
+backend:
+  name: git-gateway
+  branch: main # Cambia esto si tu rama principal es diferente
+
+media_folder: "static/img" # La carpeta donde se subirán las imágenes
+public_folder: "/img" # Ruta pública de las imágenes
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages" # Ajusta esto según la estructura de tu proyecto
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
